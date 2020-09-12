@@ -17,6 +17,7 @@ function setStart() {
     }
     document.querySelector(".btn-1 a").classList.toggle("btn-active");
     document.querySelector(".btn-1 a").style.display = "block";
+    document.querySelector(".winner-text").innerHTML = "";
     playerScore = [0,0];
 }
 setStart();
