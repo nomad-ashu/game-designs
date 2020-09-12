@@ -1,0 +1,52 @@
+h1, h2 {
+    text-align: center;
+}
+
+img {
+    display: inline-block;
+}
+
+a {
+    display: inline-block;
+}
+
+button {
+    display: block;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    background-color: wheat;
+    margin: auto;
+}
+
+.game-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 20%;
+}
+
+.btn {
+    text-align: center;
+    padding: 5%;
+    min-width: 4rem;
+    border: black solid 1px;
+    border-radius: 10%;
+    background-color: #fff;    
+}
+
+.btn-1 .btn {
+    align-self: flex-start;
+}
+
+.btn-2 .btn {
+    align-self: flex-end;
+}
+
+.btn-active {
+    display: block;
+    background-color: green;
+}
