@@ -29,7 +29,7 @@ for (var i = 0; i < 2; i++) {
 
 
 function activePlayer(){
-    if(playerScore[0] <= 10 && playerScore[1] <= 10) {
+    if(playerScore[0] <= 50 && playerScore[1] <= 50) {
         if (document.querySelector(".btn-1 a").classList.contains("btn-active")) {
             document.querySelector(".btn-1 a").style.display = "block";
             document.querySelector(".btn-2 a").style.display = "none";
@@ -40,6 +40,11 @@ function activePlayer(){
     } else {
         document.querySelector(".btn-1 a").style.display = "none";
         document.querySelector(".btn-2 a").style.display = "none";
+        if (playerScore[0] > playerScore[1]){
+            document.querySelector(".winner-text").innerHTML= 'Champion is : <span style="color:red;">Player 1</span>';
+        } else {
+            document.querySelector(".winner-text").innerHTML= 'Champion is : <span style="color:red;">Player 2</span>';
+        }
     }
 }
 
