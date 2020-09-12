@@ -9,7 +9,7 @@ var playerScore = [0,0];
 
 function setStart() {
     for(i=0; i<2; i++){
-        document.querySelectorAll("img")[i].setAttribute("src","/css/img/dice-6.jpg");
+        document.querySelectorAll("img")[i].setAttribute("src","css/img/dice-6.jpg");
         document.querySelectorAll(".scores span")[i].innerHTML=0;
         var diceClass = ".btn-" + (i+1) + " a";
         // console.log(diceClass);
@@ -51,7 +51,7 @@ function turn() {
     } else {
         dice = 2;
     }
-    document.querySelectorAll("img")[dice-1].setAttribute("src", "/css/img/dice-" + roll + ".jpg");
+    document.querySelectorAll("img")[dice-1].setAttribute("src", "css/img/dice-" + roll + ".jpg");
     if(roll !==6 && roll !==1) {
         playerScore[dice-1] = playerScore[dice-1] + roll;
     } else {
